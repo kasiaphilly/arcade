@@ -124,7 +124,7 @@ document.addEventListener("keyup", function(e) {
 function win() {
   const playAgain = confirm(`CONGRATULATIONS, YOU WIN!
     Your final score: ${yourScore}.
-Click below to close this window and play again!`);
+Click below to close this window and reload page to play again!`);
   if (playAgain == true){
     player.onStart();
     yourScore = 0;
@@ -135,7 +135,7 @@ Click below to close this window and play again!`);
 // message if player loses
 function lose() {
   const playAgain = confirm(`GAME OVER! YOU LOST!
-Click below to close this window and play again.`);
+Click below to close this window and reload page to play again.`);
   if (playAgain == true){
     player.onStart();
     yourScore = 0;
