@@ -84,15 +84,14 @@ Player.prototype.render = function() {
 
 Player.prototype.handleInput = function(rcv) {
     if (rcv === "left" && this.x > 0)
-        this.x = this.x - 40;
+        this.x = this.x - 101;
     else if (rcv === "right" && this.x < 400)
-        this.x = this.x + 40;
+        this.x = this.x + 101;
     else if (rcv === "up" && this.y > -50)
-        this.y = this.y - 40;
+        this.y = this.y - 83;
     else if (rcv === "down" && this.y < 400)
-        this.y = this.y + 40;
+        this.y = this.y + 83;
 };
-
 
 Player.prototype.toStart = function() {
     this.x = 200;
