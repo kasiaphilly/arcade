@@ -67,7 +67,7 @@ Player.prototype.update = function(dt) {
     if (this.y < 0) {
         this.y = 0;
 
-        player.toStart();
+        this.toStart();
         yourScore += 1;
         scoreCounter.textContent = `Your score: ${yourScore}`;
         if (yourScore >= 10) {
